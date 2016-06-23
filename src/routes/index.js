@@ -4,6 +4,11 @@ import App from '../containers/App';
 import { NotFoundView, Counter, FooView, BarView } from '../components';
 import { browserHistory } from 'react-router';
 
+/* Custom views*/
+
+import BazView from '../components/BazView';
+
+
 export default () => {
   return (
     <Router history={browserHistory}>
@@ -15,6 +20,7 @@ export default () => {
         <IndexRoute component={Counter}/>
         <Route path="foo" component={FooView}/>
         <Route path="bar" component={BarView}/>
+        <Route path="baz" component={BazView}/>
         <Route path="*" component={NotFoundView} />
       </Route>
     </Router>

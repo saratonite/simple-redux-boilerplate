@@ -22,6 +22,7 @@ export default class App extends Component {
             <span><Link to="/">Home</Link></span>
             <span><Link to="/foo">Foo</Link></span>
             <span><Link to="/bar">Bar</Link></span>
+            <span><Link to="/baz">Baz</Link></span>
           </div>
         </div>
           <div>
